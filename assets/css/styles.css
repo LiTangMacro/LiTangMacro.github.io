@@ -171,11 +171,12 @@ em { font-style: italic; }
 [data-theme="dark"] .hero-email a:hover { color: #ff9d96; }
 .hero-fields {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: var(--accent);
+  font-weight: 600;
   margin: 0 0 22px;
   line-height: 1.5;
 }
-.hero-fields strong { color: var(--heading); font-weight: 600; }
+.hero-fields strong { color: var(--accent); font-weight: 700; }
 .hero-chips {
   margin: 0 0 30px;
   gap: 9px;
