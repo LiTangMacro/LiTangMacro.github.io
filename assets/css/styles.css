@@ -37,12 +37,15 @@
 /* ----------------------- Base ----------------------- */
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  font-size: 15px;          /* root size — shrinks the whole rem-based type scale */
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 16.5px;
+  font-size: 1rem;
   line-height: 1.55;
   color: var(--text);
   background: var(--bg);
@@ -142,7 +145,7 @@ em { font-style: italic; }
 }
 .hero-text { flex: 1; min-width: 0; }
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 0 0 5px;
   font-weight: 700;
 }
@@ -368,7 +371,6 @@ em { font-style: italic; }
 
 /* ----------------------- Responsive ----------------------- */
 @media (max-width: 720px) {
-  body { font-size: 16px; }
   .nav-links { display: none; }
   .hero {
     flex-direction: column-reverse;
