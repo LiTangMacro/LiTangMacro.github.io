@@ -158,8 +158,14 @@ em { font-style: italic; }
 .hero-affil {
   font-size: 1.02rem;
   color: var(--text-muted);
+  margin: 0 0 4px;
+}
+.hero-email {
+  font-size: 0.95rem;
   margin: 0 0 22px;
 }
+.hero-email a { color: var(--text-muted); text-decoration: none; }
+.hero-email a:hover { color: var(--accent); }
 .hero-chips {
   margin: 0 0 30px;
   gap: 9px;
@@ -294,6 +300,18 @@ em { font-style: italic; }
   color: var(--text-muted);
   font-size: 0.93rem;
   margin: 0 0 3px;
+}
+.pub-authors a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.pub-authors a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 .pub-venue {
   font-size: 0.93rem;
