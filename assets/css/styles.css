@@ -313,6 +313,28 @@ em { font-style: italic; }
 }
 .section-alt .pub-year { background: var(--surface); }
 
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 9px 0 0;
+}
+.pub-links a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 3px 11px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.pub-links a:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+
 /* ----------------------- Contact ----------------------- */
 .contact-grid {
   display: grid;
