@@ -11,9 +11,9 @@
   --text: #1b1e23;
   --text-muted: #5b636e;
   --heading: #0d0f12;
-  --accent: #2563eb;
-  --accent-hover: #1d4fd7;
-  --accent-soft: rgba(37, 99, 235, 0.10);
+  --accent: #1e40af;
+  --accent-hover: #1e3a8a;
+  --accent-soft: rgba(30, 64, 175, 0.10);
   --border: #e6e8ec;
   --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 4px 12px rgba(16, 24, 40, 0.05);
   --radius: 12px;
@@ -27,9 +27,9 @@
   --text: #e4e7eb;
   --text-muted: #9aa3ad;
   --heading: #f4f6f8;
-  --accent: #6ea0ff;
-  --accent-hover: #8ab4ff;
-  --accent-soft: rgba(110, 160, 255, 0.14);
+  --accent: #7ea3f0;
+  --accent-hover: #9cbcf7;
+  --accent-soft: rgba(126, 163, 240, 0.16);
   --border: #262b33;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
 }
@@ -177,7 +177,7 @@ em { font-style: italic; }
   font-weight: 700;
   letter-spacing: 0.02em;
   color: #fff;
-  background: linear-gradient(135deg, var(--accent), #7c3aed);
+  background: linear-gradient(135deg, var(--accent), #13306e);
   box-shadow: var(--shadow);
   border: 4px solid var(--surface);
   user-select: none;
@@ -311,19 +311,21 @@ em { font-style: italic; }
 .section-alt .pub-year { background: var(--surface); }
 
 .pub-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin: 8px 0 0;
+  display: inline;
 }
 .pub-links a {
-  font-size: 0.8rem;
-  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
   color: var(--accent);
   background: var(--accent-soft);
-  padding: 3px 11px;
-  border-radius: 7px;
+  padding: 2px 9px;
+  border-radius: 6px;
   text-decoration: none;
+  position: relative;
+  top: -1px;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 .pub-links a:hover {
