@@ -42,8 +42,8 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 16.5px;
+  line-height: 1.55;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
@@ -90,7 +90,7 @@ em { font-style: italic; }
   display: flex;
   align-items: center;
   gap: 16px;
-  height: 60px;
+  height: 56px;
 }
 .nav-brand {
   font-weight: 700;
@@ -137,39 +137,36 @@ em { font-style: italic; }
 .hero {
   display: flex;
   align-items: center;
-  gap: 48px;
-  padding: 72px 24px 56px;
+  gap: 40px;
+  padding: 40px 24px 28px;
 }
 .hero-text { flex: 1; min-width: 0; }
 .hero h1 {
-  font-size: 2.7rem;
-  margin: 0 0 6px;
+  font-size: 2.5rem;
+  margin: 0 0 5px;
   font-weight: 700;
 }
 .hero-role {
-  font-size: 1.2rem;
+  font-size: 1.18rem;
   font-weight: 600;
   color: var(--accent);
   margin: 0 0 2px;
 }
 .hero-affil {
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   color: var(--text-muted);
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 }
-.hero-tagline {
-  font-size: 1.08rem;
-  color: var(--text);
-  max-width: 46ch;
-  margin: 0 0 26px;
+.hero-chips {
+  margin: 2px 0 20px;
 }
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 
 .hero-aside { flex-shrink: 0; }
 .avatar {
-  width: 148px;
-  height: 148px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 22%;
@@ -191,7 +188,7 @@ em { font-style: italic; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 9px 18px;
+  padding: 8px 17px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -219,13 +216,13 @@ em { font-style: italic; }
 }
 
 /* ----------------------- Sections ----------------------- */
-.section { padding: 56px 0; }
+.section { padding: 34px 0; }
 .section-alt { background: var(--bg-alt); }
 
 .section-title {
-  font-size: 1.55rem;
-  margin: 0 0 26px;
-  padding-bottom: 12px;
+  font-size: 1.5rem;
+  margin: 0 0 16px;
+  padding-bottom: 9px;
   position: relative;
 }
 .section-title::after {
@@ -233,20 +230,20 @@ em { font-style: italic; }
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 46px;
+  width: 44px;
   height: 3px;
   border-radius: 3px;
   background: var(--accent);
 }
 
 .subhead {
-  font-size: 1.12rem;
-  margin: 34px 0 14px;
+  font-size: 1.1rem;
+  margin: 20px 0 8px;
   color: var(--heading);
 }
-.subhead:first-of-type { margin-top: 6px; }
+.subhead:first-of-type { margin-top: 4px; }
 
-.prose p { color: var(--text); margin: 0 0 16px; max-width: 68ch; }
+.prose p { color: var(--text); margin: 0 0 14px; max-width: 68ch; }
 .prose strong { font-weight: 600; }
 
 /* ----------------------- Chips ----------------------- */
@@ -254,16 +251,16 @@ em { font-style: italic; }
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   padding: 0;
   margin: 0;
 }
 .chips li {
   background: var(--accent-soft);
   color: var(--accent);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  padding: 6px 14px;
+  padding: 5px 13px;
   border-radius: 999px;
 }
 
@@ -278,7 +275,7 @@ em { font-style: italic; }
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
-  padding: 18px 0;
+  padding: 12px 0;
   border-bottom: 1px solid var(--border);
 }
 .pub:last-child { border-bottom: none; }
@@ -291,11 +288,11 @@ em { font-style: italic; }
 }
 .pub-authors {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   margin: 0 0 3px;
 }
 .pub-venue {
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   color: var(--text);
   margin: 0;
 }
@@ -317,7 +314,7 @@ em { font-style: italic; }
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin: 9px 0 0;
+  margin: 8px 0 0;
 }
 .pub-links a {
   font-size: 0.8rem;
@@ -339,7 +336,7 @@ em { font-style: italic; }
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 26px;
+  gap: 22px;
 }
 .contact-label {
   font-size: 0.8rem;
@@ -354,7 +351,7 @@ em { font-style: italic; }
 /* ----------------------- Footer ----------------------- */
 .footer {
   border-top: 1px solid var(--border);
-  padding: 26px 0;
+  padding: 20px 0;
   color: var(--text-muted);
   font-size: 0.9rem;
 }
@@ -374,12 +371,12 @@ em { font-style: italic; }
   .hero {
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 28px;
-    padding: 48px 24px 40px;
+    gap: 22px;
+    padding: 28px 24px 24px;
   }
-  .hero h1 { font-size: 2.2rem; }
-  .avatar { width: 116px; height: 116px; font-size: 2.4rem; }
-  .section { padding: 44px 0; }
+  .hero h1 { font-size: 2.1rem; }
+  .avatar { width: 112px; height: 112px; font-size: 2.4rem; }
+  .section { padding: 28px 0; }
 }
 
 /* Respect reduced-motion preferences */
