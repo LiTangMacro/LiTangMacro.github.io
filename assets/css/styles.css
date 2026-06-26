@@ -164,8 +164,11 @@ em { font-style: italic; }
   font-size: 0.95rem;
   margin: 0 0 22px;
 }
-.hero-email a { color: var(--text-muted); text-decoration: none; }
-.hero-email a:hover { color: var(--accent); }
+.hero-email strong { color: var(--heading); font-weight: 600; }
+.hero-email a { color: #c0392b; text-decoration: none; }
+.hero-email a:hover { color: #a93226; text-decoration: underline; }
+[data-theme="dark"] .hero-email a { color: #ff7b72; }
+[data-theme="dark"] .hero-email a:hover { color: #ff9d96; }
 .hero-fields {
   font-size: 0.95rem;
   color: var(--text-muted);
