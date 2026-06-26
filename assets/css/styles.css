@@ -145,8 +145,8 @@ em { font-style: italic; }
 }
 .hero-text { flex: 1; min-width: 0; }
 .hero h1 {
-  font-size: 1.8rem;
-  margin: 0 0 5px;
+  font-size: 1.05rem;
+  margin: 0 0 4px;
   font-weight: 700;
 }
 .hero-role {
