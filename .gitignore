@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Local tooling / preview config (not needed for the live site)
+.claude/
+
+# Source photos & screenshots — the deployed avatar is assets/img/profile.jpg
+2.jpg
+Document8a.jpg
+assets/img/Document8a.jpg
+Screenshot*.png
+
+# Editor / logs
+.vscode/
+*.log
