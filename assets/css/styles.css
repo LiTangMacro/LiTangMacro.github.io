@@ -158,13 +158,14 @@ em { font-style: italic; }
 .hero-affil {
   font-size: 1.02rem;
   color: var(--text-muted);
-  margin: 0 0 16px;
+  margin: 0 0 22px;
 }
 .hero-chips {
-  margin: 2px 0 20px;
+  margin: 0 0 30px;
+  gap: 9px;
 }
 
-.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
 
 .hero-aside { flex-shrink: 0; }
 .avatar {
