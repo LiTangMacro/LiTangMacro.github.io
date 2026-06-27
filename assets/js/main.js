@@ -59,4 +59,13 @@
   /* ---------- Footer year ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  /* ---------- "Back to top" / brand link (sticky-safe scroll to 0) ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('a[href="#top"]'), function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    });
+  });
 })();
